@@ -35,6 +35,13 @@ proguard/
 
 # Android Studio captures folder
 captures/
+bin
+build
+gen
+lint.xml
+build
+bin/
+gen/
 
 # IntelliJ
 *.iml
@@ -47,6 +54,8 @@ captures/
 # Android Studio 3 in .gitignore file.
 .idea/caches
 .idea/modules.xml
+*.idea
+/**/*.iml
 # Comment next line if keeping position of elements in Navigation Editor is relevant for you
 .idea/navEditor.xml
 
@@ -83,3 +92,16 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+/**/.DS_Store
+
+*.iml
+.gradle
+/test-project.properties
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+*.apk
