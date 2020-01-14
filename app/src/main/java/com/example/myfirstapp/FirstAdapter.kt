@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 /**
  * @author Inés Saint Martin
  */
-class FirstAdapter(private val myDataset: Array<String>) :
+class FirstAdapter(private val myDataset: ArrayList<Item>) :
         RecyclerView.Adapter<FirstAdapter.MyViewHolder>() {
 
     // Provide a reference to the views for each data item
@@ -35,7 +35,7 @@ class FirstAdapter(private val myDataset: Array<String>) :
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        holder.textView.text = myDataset[position]
+        holder.textView.text = myDataset[position].title
     }
 
     // Return the size of your dataset (invoked by the layout manager)
