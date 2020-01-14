@@ -1,12 +1,12 @@
 package com.example.myfirstapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
         firstButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(), "Click", Toast.LENGTH_SHORT).show();
+                Intent listIntent = new Intent(view.getContext(), ListActivity.class);
+                startActivity(listIntent);
             }
         });
 
