@@ -18,4 +18,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_label" />
+
+    <Button
+        android:id="@+id/second_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/second_button_label" />
 </LinearLayout>

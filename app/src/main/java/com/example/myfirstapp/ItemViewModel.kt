@@ -20,7 +20,7 @@ class ItemViewModel : ViewModel() {
 
     private fun populateList() {
         for (i in 0 until 30) {
-            list.add(Item("Titulo # $i", "Descripción # $i"))
+            list.add(Item("Titulo # $i", i))
         }
     }
 }
